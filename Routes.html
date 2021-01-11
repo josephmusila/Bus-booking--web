@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="JQuery/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">Rogue Travellers </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Routes.html"  id="active">Routes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Bookings.html" id="routes">Book Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Agencies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1">Parcels</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                                aria-expanded="false">Bookings</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">Bus Ticket</a></li>
+                                <li><a class="dropdown-item" href="#">Parcel</a></li>
+                                <li><a class="dropdown-item" href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+    
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container" id="Routes-dashboard">
+        <div class="row align-items-center" id="route-text">
+            <h3>The following are Our main Routes</h3>
+            <p>Each route has both Passenger and parcel Delivery Departments</p>
+        </div>
+    </div>
+    <div class="container" id="Routes-dashboard" >
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xm-12">
+            <h2 class="demoHeaders">Nairobi Region</h2>
+            <div id="Nairobi">
+                <h3>Country Bus-[Western]</h3>
+                    <ul>
+                        <li>Nairobi-Kisii</li>
+                        <li>Nairobi-Kisumu</li>
+                        <li>Nairobi-West-Pokot</li>
+                    </ul>
+                
+                <h3>Country Bus-[Eastern]</h3>
+                    <ul>
+                        <li>Nairobi-Machakos</li>
+                        <li>Nairobi-Meru</li>
+                        <li>Nairobi-Isiolo-marsabit-Mandera</li>
+                    </ul>
+                
+                <h3>Country Bus-[RiftValley]</h3>
+                    <ul>
+                        <li>Nairobi-Nakuru</li>
+                        <li>Nairobi-Eldoret</li>
+                        <li>Nairobi-Turkana</li>
+                    </ul>
+                <h3>Country Bus-[Coast]</h3>
+                    <ul>
+                        <li>Nairobi-Mombasa</li>
+                        <li>Nairobi-Kilifi</li>
+                        <li>Nairobi-Namanga</li>
+                    </ul>
+                
+               
+            </div>
+          </div>
+
+        
+          <div class="col-lg-6 col-md-12 sm-12">
+            <h2 class="demoHeaders">Eastern-Region</h2>
+            <div id="Eastern">
+                <h3>Machakos</h3>
+                    <ul>
+                        <li>Machakos-Nairobi</li>
+                        <li>Machakos-Makutano-Mombasa</li>
+                        <li>Machakos-Namanga</li>
+                    </ul>
+                <h3>Isiolo</h3>
+                <ul>
+                    <li>Isiolo-Nairobi</li>
+                    <li>Isiolo-Marsabit-Mandera</li>
+                    <li>Isiolo-Samburu-Turkana</li>
+                </ul>
+                <h3>Makueni</h3>
+                <ul>
+                    <li>Makueni-Mombasa</li>
+                    <li>Makueni-Kitui-Wajir</li>
+                    <li>Makueni-Meru</li>
+                </ul>
+                <h3>Turkana</h3>
+                <ul>
+                    <li>
+                        Turkana-Ethiopia
+                    </li>
+                    <li>Turkana-Nairobi</li>
+                    <li>Turkan-Sudan</li>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xm-12">
+            <h2 class="demoHeaders">Rift-Valley Region</h2>
+            <div id="Nairobi">
+                <h3>Naivasha</h3>
+                    <ul>
+                        <li>Naivasha-Eldoret</li>
+                        <li>Naivasha-Kisumu</li>
+                        <li>Naivasha-Uasin-Gishu</li>
+                    </ul>
+                
+                <h3>Nakuru</h3>
+                    <ul>
+                        <li>Nakuru-Nairobi</li>
+                        <li>Nakuru-North-Rift</li>
+                        <li>Nakuru-Namanga</li>
+                    </ul>
+                
+                <h3>Eldoret</h3>
+                    <ul>
+                        <li>Eldoret-Uganda</li>
+                        <li>Eldoret-Nairobi</li>
+                        <li>Eldoret-Uganda</li>
+                    </ul>
+                <h3>Kajiado</h3>
+                    <ul>
+                        <li>Kajiado-Namanga</li>
+                        <li>Kajiado-Nairobi</li>
+                        <li>Kajiado-Western</li>
+                    </ul>
+                
+               
+            </div>
+          </div>
+
+        
+          <div class="col-lg-6 col-md-12 sm-12">
+            <h2 class="demoHeaders">Western And Nyanza</h2>
+            <div id="Eastern">
+                <h3>Kisumu</h3>
+                    <ul>
+                        <li>Kisumu-Nairobi</li>
+                        <li>Kisumu-Uganda</li>
+                        <li>Kisumu-Kisii</li>
+                    </ul>
+                <h3>Kisii</h3>
+                <ul>
+                    <li>Kisii-Bungoma</li>
+                    <li>Kisii-North-Rift</li>
+                    <li>Kisii-Naivasha</li>
+                </ul>
+                <h3>Busia</h3>
+                <ul>
+                    <li>Busia-Nairobi</li>
+                    <li>Busia-Bungoma</li>
+                    <li>Busia-Uganda</li>
+                </ul>
+                <h3>Others</h3>
+                <ul>
+                    <li>
+                        Ugenya-Kisii
+                    </li>
+                    <li>Kisumu-South-Rift</li>
+                    <li>From Kisumu InterNational Airport</li>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <script src="JQuery/jquery.js"></script>
+    <script src="JQuery/jquery-ui.min.js"></script>
+    <script src="index.js" type="module" assync></script>
+    <script src="JQuery/Ui.js" type="module" assync></script>
+    </body>
+    </html>
